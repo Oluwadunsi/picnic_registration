@@ -62,13 +62,13 @@ export default function Hero() {
     />
   </svg>
 </div>
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pb-16 text-center text-white sm:pb-0">
         {/* Logo */}
-        <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-white p-2 shadow-md">
+        <div className="mb-3 mt-8 flex h-13 w-13 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-white p-2 shadow-md">
           <img
             src={logo}
             alt="Church Logo"
-            className="h-16 w-16 rounded-full object-contain"
+            className="h-13 w-13 sm:h-16 sm:w-16 rounded-full object-contain"
           />
         </div>
 
@@ -77,20 +77,20 @@ export default function Hero() {
           Casual Sunday
         </h1>
 
-        <p className="-my-1 font-serif text-2xl italic leading-none">and</p>
+        <p className="my-1 font-serif text-2xl italic leading-none">and</p>
 
         <h2 className="text-5xl sm:text-7xl font-extrabold uppercase tracking-[0.18em]">
           Picnic
         </h2>
 
         {/* Date */}
-        <div className="my-6 h-px w-44 bg-white/60" />
+        <div className="my-4 sm:my-6 h-px w-44 bg-white/60" />
 
         <p className="text-2xl sm_text-4xl font-extrabold uppercase tracking-wide">
           12th July
         </p>
 
-        <div className="my-6 h-px w-44 bg-white/60" />
+        <div className="my-4 sm:my-6 h-px w-44 bg-white/60" />
 
         {/* Event details */}
         <div className="space-y-4 text-[18px] sm:text-[20px] font-semibold uppercase">
@@ -106,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Bible verse */}
-        <p className="mt-4 sm:mt-8 max-w-[260px] text-[10px] sm:text-[14px] italic leading-snug pb-2">
+        <p className="mt-4 sm:mt-8 max-w-[420px] text-[12px] sm:text-[17px] italic leading-snug pb-2">
           “Jesus Christ the same yesterday, and today, and forever.”
           <br />
           <span className="font-semibold">Hebrews 13:8</span>
