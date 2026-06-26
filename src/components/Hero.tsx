@@ -64,11 +64,11 @@ export default function Hero() {
 </div>
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         {/* Logo */}
-        <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-white p-2 shadow-md">
+        <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-white p-2 shadow-md">
           <img
             src={logo}
             alt="Church Logo"
-            className="h-16 w-16 object-contain"
+            className="h-16 w-16 rounded-full object-contain"
           />
         </div>
 
@@ -93,10 +93,10 @@ export default function Hero() {
         <div className="my-6 h-px w-44 bg-white/60" />
 
         {/* Event details */}
-        <div className="space-y-4 text-xs sm:text-[16px] font-semibold uppercase">
+        <div className="space-y-4 text-[18px] sm:text-[20px] font-semibold uppercase">
           <div>
             <p>🌸 Service @11AM</p>
-            <p className="font-normal normal-case">Högabergsgatan 5</p>
+            <p className="font-normal text-center normal-case">Högabergsgatan 5</p>
           </div>
 
           <div>
@@ -106,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Bible verse */}
-        <p className="mt-8 max-w-[260px] text-[10px] sm_text-[14px] italic leading-snug pb-2">
+        <p className="mt-4 sm:mt-8 max-w-[260px] text-[10px] sm:text-[14px] italic leading-snug pb-2">
           “Jesus Christ the same yesterday, and today, and forever.”
           <br />
           <span className="font-semibold">Hebrews 13:8</span>

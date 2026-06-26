@@ -11,6 +11,7 @@ export default function RegistrationForm() {
   const [additionalComments, setAdditionalComments] = useState("");
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -29,7 +30,7 @@ export default function RegistrationForm() {
 
         try {
           const response = await fetch(
-            "https://script.google.com/macros/s/AKfycbzErdPBasIWVYkn11YBnyYt8X9IHkIOrJLP7D2zCz-LhYUOO9FlACpkseyvja3X4tkKdg/exec",
+            SCRIPT_URL,
             {
               method: "POST",
               body: JSON.stringify(registrationData),
@@ -171,8 +172,8 @@ export default function RegistrationForm() {
             <option value="⚽ Football">⚽ Football</option>
             <option value="🎲 Ludo">🎲 Ludo</option>
             <option value="♟ Chess">♟ Chess</option>
-            <option value="🎤 Karaoke">🎤 Karaoke</option>
-            <option value="🏐 Volleyball">🏐 Volleyball</option>
+            <option value="♜ Kubb (Viking Chess)">♜ Kubb (Viking Chess)</option>
+            <option value="🏏 Brännboll">🏏 Brännboll</option>
             <option value="📖 Bible Quiz">📖 Bible Quiz</option>
             <option value="🧩 Board Games">🧩 Board Games</option>
           </select>
@@ -187,7 +188,7 @@ export default function RegistrationForm() {
                     selectedGameOptions.filter((item) => item !== game)
                   )
                 }
-                className="rounded-full bg-lime-500 px-3 py-1 text-xs font-medium text-white"
+                className="rounded-full bg-lime-500 px-3 py-3 text-s font-medium text-white"
               >
                 {game} ✕
               </button>
