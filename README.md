@@ -1,79 +1,58 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Picnic Registration System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive event registration website built for managing picnic attendance.  
+The application allows participants to submit their registration details through a simple form, with submitted data stored externally using Google Apps Script and Google Sheets.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://picnic-registration.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/Oluwadunsi/picnic_registration
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project was created to provide a simple digital registration system for a church picnic event. Instead of using paper forms, google forms or manual message collection, participants can register through a clean web interface.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The goal was to build a lightweight, accessible, and easy-to-deploy solution without setting up a full backend or database.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Responsive registration form
+- Clean and mobile-friendly user interface
+- Form validation for required participant details
+- Google Apps Script integration for form submission
+- Google Sheets used as a lightweight data storage solution
+- Deployed with Vercel
 
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- Vite
+- CSS / Tailwind CSS
+- Google Apps Script
+- Google Sheets
+- Vercel
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## What I Learned
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Building responsive form-based applications
+- Managing form state in React
+- Connecting a frontend application to Google Apps Script
+- Using Google Sheets as a lightweight backend alternative
+- Deploying a frontend project with Vercel
+- Considering project constraints and choosing a simple solution instead of over-engineering with a full database
 
-```
-=======
-# picnic_registration
->>>>>>> eb7a8cf93fa5e43399c9d7363dc4d83ed65f8006
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Oluwadunsi/picnic_registration.git
+
+npm install
+
+npm run dev
+
